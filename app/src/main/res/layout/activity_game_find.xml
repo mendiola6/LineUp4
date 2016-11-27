@@ -9,7 +9,7 @@
         android:id="@+id/pick_game_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/choose_game"
+        android:text="Choose Option: "
         android:textStyle="bold"
         android:layout_marginTop="32dp"/>
 
@@ -17,12 +17,18 @@
         android:id="@+id/find_game_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/find_game"/>
+        android:text="Go Back"/>
 
     <Button
         android:id="@+id/go_to_board_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/go_to_board"/>
+        android:text="Pass and Play Game Mode"/>
+
+    <Button
+        android:id="@+id/use_bluetooth_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Use Bluetooth"/>
 
 </LinearLayout>
