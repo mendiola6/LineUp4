@@ -31,4 +31,10 @@
         android:layout_height="wrap_content"
         android:text="Use Bluetooth"/>
 
+    <Button
+        android:id="@+id/three_player_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start 3 Player Game"/>
+
 </LinearLayout>

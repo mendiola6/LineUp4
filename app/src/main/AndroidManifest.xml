@@ -21,11 +21,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".FindGameActivity"></activity>
-        <activity android:name=".BoardGameActivity"></activity>
+        <activity android:name=".BoardGame2PlayerActivity"></activity>
         <activity android:name=".SettingsActivity"></activity>
         <activity android:name=".FacebookActivity"></activity>
         <activity android:name=".BluetoothActivity"></activity>
         <activity android:name=".ListDevicesActivity"></activity>
+        <activity android:name=".BoardGame3PlayerActivity"></activity>
 
         <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
