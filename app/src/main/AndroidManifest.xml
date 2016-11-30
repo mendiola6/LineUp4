@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="nieman.josh.lineup4">
 
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
@@ -21,6 +24,8 @@
         <activity android:name=".BoardGameActivity"></activity>
         <activity android:name=".SettingsActivity"></activity>
         <activity android:name=".FacebookActivity"></activity>
+        <activity android:name=".BluetoothActivity"></activity>
+        <activity android:name=".ListDevicesActivity"></activity>
 
         <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->

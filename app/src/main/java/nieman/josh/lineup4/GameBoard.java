@@ -246,10 +246,18 @@ public class GameBoard extends View {
             //check to see if that was a winning move
             winner = checkForWinner(column,row);
             if(winner != 0){
-                Toast toast = Toast.makeText(this.getContext(),"Player" + winner + " won the game!", Toast.LENGTH_LONG);
-                toast.setGravity(Gravity.CENTER,0,0);
-                toast.show();
-                Log.d("FOUND_WINNER", "Player" + winner + " won the game");
+                if(winner == 1){
+                    Toast toast = Toast.makeText(this.getContext(), player1Name + " won the game!", Toast.LENGTH_LONG);
+                    toast.setGravity(Gravity.CENTER,0,0);
+                    toast.show();
+                    Log.d("FOUND_WINNER", player1Name + " won the game");
+                }
+                else if(winner == 2){
+                    Toast toast = Toast.makeText(this.getContext(), player2Name + " won the game!", Toast.LENGTH_LONG);
+                    toast.setGravity(Gravity.CENTER,0,0);
+                    toast.show();
+                    Log.d("FOUND_WINNER", player2Name + " won the game");
+                }
             }
 
             //toggle whose trun it is

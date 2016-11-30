@@ -46,16 +46,16 @@
         android:layout_below="@id/editText3"
         android:text="blue"
         android:onClick="onCheckboxClicked"/>
-    <CheckBox android:id="@+id/red"
+    <CheckBox android:id="@+id/green"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/blue"
-        android:text="red"
+        android:text="green"
         android:onClick="onCheckboxClicked"/>
     <CheckBox android:id="@+id/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/red"
+        android:layout_below="@id/green"
         android:text="black"
         android:onClick="onCheckboxClicked"/>
 

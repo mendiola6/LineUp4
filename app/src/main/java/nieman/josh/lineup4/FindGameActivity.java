@@ -14,6 +14,7 @@ public class FindGameActivity extends AppCompatActivity implements View.OnClickL
 
     Button mFindGameButton;
     Button mGoToBoardButton;
+    Button mUseBluetoothButton;
 
     @Override
     protected void onCreate(Bundle savedInstance){
@@ -21,11 +22,13 @@ public class FindGameActivity extends AppCompatActivity implements View.OnClickL
         setContentView(R.layout.activity_game_find);
 
         mFindGameButton = (Button)findViewById(R.id.find_game_button);
-        mFindGameButton.setText("Go back");
         mFindGameButton.setOnClickListener(this);
 
         mGoToBoardButton = (Button)findViewById(R.id.go_to_board_button);
         mGoToBoardButton.setOnClickListener(this);
+
+        mUseBluetoothButton = (Button)findViewById(R.id.use_bluetooth_button);
+        mUseBluetoothButton.setOnClickListener(this);
     }
 
     @Override
@@ -37,6 +40,10 @@ public class FindGameActivity extends AppCompatActivity implements View.OnClickL
             case R.id.go_to_board_button:
                 //Log.d("TAG","clicked the go to board button");
                 startActivity(new Intent(this, BoardGameActivity.class));
+                break;
+            case R.id.use_bluetooth_button:
+                Intent goToBluetooth = new Intent(getApplicationContext(),BluetoothActivity.class);
+                startActivity(goToBluetooth);
                 break;
         }
     }
