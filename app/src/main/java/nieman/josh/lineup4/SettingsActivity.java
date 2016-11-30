@@ -84,9 +84,9 @@ public class SettingsActivity extends Activity  {
                     editor.apply();
                 }
                 break;
-            case R.id.red:
+            case R.id.green:
                 if (checked) {
-                    editor.putString(Color,"red");
+                    editor.putString(Color,"green");
                     editor.apply();
                 }
                 break;
