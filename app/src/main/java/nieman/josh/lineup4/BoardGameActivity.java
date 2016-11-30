@@ -57,12 +57,14 @@ public class BoardGameActivity extends Activity {
         LinearLayout linearLayout = new LinearLayout(getApplicationContext());
         linearLayout.setOrientation(LinearLayout.VERTICAL);
         linearLayout.setGravity(Gravity.CENTER);
+
         TextView player1Name = new TextView(getApplicationContext());
         player1Name.setText(mGameboard.getPlayer1Name());
         player1Name.setTextColor(mGameboard.getPlayer1Color());
         player1Name.setTextSize(24);
         player1Name.setPadding(10,10,100,10);
         //player1Name.setWidth(700);
+
         TextView player2Name = new TextView(getApplicationContext());
         player2Name.setText(mGameboard.getPlayer2Name());
         player2Name.setTextColor(mGameboard.getPlayer2Color());
@@ -71,6 +73,7 @@ public class BoardGameActivity extends Activity {
 
 
         LinearLayout namesLayout = new LinearLayout(getApplicationContext());
+
         namesLayout.setOrientation(LinearLayout.HORIZONTAL);
         namesLayout.addView(player1Name);
         namesLayout.addView(player2Name);
