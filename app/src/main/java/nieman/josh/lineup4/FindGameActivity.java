@@ -27,8 +27,8 @@ public class FindGameActivity extends AppCompatActivity implements View.OnClickL
         mGoToBoardButton = (Button)findViewById(R.id.go_to_board_button);
         mGoToBoardButton.setOnClickListener(this);
 
-        mUseBluetoothButton = (Button)findViewById(R.id.use_bluetooth_button);
-        mUseBluetoothButton.setOnClickListener(this);
+//        mUseBluetoothButton = (Button)findViewById(R.id.use_bluetooth_button);
+//        mUseBluetoothButton.setOnClickListener(this);
 
         m3PlayerGameButton = (Button) findViewById(R.id.three_player_game);
         m3PlayerGameButton.setOnClickListener(this);
@@ -44,10 +44,10 @@ public class FindGameActivity extends AppCompatActivity implements View.OnClickL
                 //Log.d("TAG","clicked the go to board button");
                 startActivity(new Intent(this, BoardGame2PlayerActivity.class));
                 break;
-            case R.id.use_bluetooth_button:
-                Intent goToBluetooth = new Intent(getApplicationContext(),BluetoothActivity.class);
-                startActivity(goToBluetooth);
-                break;
+//            case R.id.use_bluetooth_button:
+//                Intent goToBluetooth = new Intent(getApplicationContext(),BluetoothActivity.class);
+//                startActivity(goToBluetooth);
+//                break;
             case R.id.three_player_game:
                 startActivity(new Intent(this, BoardGame3PlayerActivity.class));
                 break;
