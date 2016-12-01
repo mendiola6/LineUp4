@@ -46,7 +46,16 @@ public class SettingsActivity extends Activity  {
         String name2 = sharedpreferences.getString(Name2, "");
         String name3 = sharedpreferences.getString(Name3, "");
 
-        ed1.setText(name1);
+        
+        SharedPreferences settings = getSharedPreferences("NAMES", Context.MODE_PRIVATE);
+
+        if (settings.contains("name")) {
+            String name = settings.getString("name", "No name defined");//"No name defined" is the default value.
+            ed1.setText(name);
+
+        }else{
+            ed1.setText(name1);
+        }
         ed2.setText(name2);
         ed3.setText(name3);
 

@@ -74,7 +74,7 @@
         android:layout_height="wrap_content"
         android:text="Save"
         android:id="@+id/save_button"
-        android:layout_below="@+id/red"
+        android:layout_below="@+id/green"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp" />
 
